@@ -33,7 +33,7 @@ Download the latest version of thru by navigating the `build` directory.  Or see
 
   * [thru - v1 - Mac OS X](https://github.com/stretchrcom/thru/blob/master/build/Mac%20OS%20X/v1/thru.zip?raw=true)
 
-Download the file somewhere nice, and add it to your `PATH` so you can use it in the command line.
+Download the file somewhere nice (like `/usr/bin`), and ensure it is added to your `PATH` so you can use it in the command line.
 
 ### Build your own
 
@@ -42,4 +42,4 @@ If you want to build your own:
   * Get the repo
   * Make sure you have Go installed
   * Do `go build`
-  * Put the `thru` output file in some bin folder and add it to your `PATH`
+  * Put the `thru` output file in some nice bin folder (like `/usr/bin`) and add it to your `PATH`
