@@ -2,6 +2,8 @@
 
 Worlds simplest web server.
 
+  * Servers static files via a URL
+
 ## Usage
 
   * Navigate to the directory of files you want to serve.
