@@ -4,8 +4,8 @@ Worlds simplest web server.
 
 ## Usage
 
-  # Navigate to the directory of files you want to serve.
-  # Type `thru -o`
+  * Navigate to the directory of files you want to serve.
+  * Type `thru -o`
 
 ## Examples
 
