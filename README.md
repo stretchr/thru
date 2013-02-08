@@ -30,3 +30,14 @@ Worlds simplest web server.
 Download the latest version of thru by navigating the `build` directory.  Or see if the version you want is in this list:
 
   * [thru - v1 - Mac OS X](https://github.com/stretchrcom/thru/blob/master/build/Mac%20OS%20X/v1/thru?raw=true)
+
+Download the file somewhere nice, and add it to your `PATH` so you can use it in the command line.
+
+### Build your own
+
+If you want to build your own:
+
+  * Get the repo
+  * Make sure you have Go installed
+  * Do `go build`
+  * Put the `thru` output file in some bin folder and add it to your `PATH`
