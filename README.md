@@ -24,3 +24,9 @@ Worlds simplest web server.
 ### Bind to a specific I.P. address, with specific port, and open browser
 
     thru 127.0.0.1:3000 -o
+
+## Get thru
+
+Download the latest version of thru by navigating the `build` directory.  Or see if the version you want is in this list:
+
+  * [thru - v1 - Mac OS X](https://github.com/stretchrcom/thru/blob/master/build/Mac%20OS%20X/v1/thru?raw=true)
