@@ -33,7 +33,16 @@ You can also easily run multiple thru instances this way. thru will automaticall
 
 Download the latest version of thru by navigating the `build` directory.  Or see if the version you want is in this list:
 
-  * [thru - v1 - Mac OS X](https://github.com/stretchrcom/thru/blob/master/build/Mac%20OS%20X/v1/thru.zip?raw=true)
+  * [thru - v1 - Mac OS X 32 Bit](https://github.com/stretchrcom/thru/blob/master/build/v1/thru-darwin-386.zip?raw=true)
+  * [thru - v1 - Mac OS X 64 Bit](https://github.com/stretchrcom/thru/blob/master/build/v1/thru-darwin-amd64.zip?raw=true)
+  * [thru - v1 - BSD 32 Bit](https://github.com/stretchrcom/thru/blob/master/build/v1/thru-freebsd-386.zip?raw=true)
+  * [thru - v1 - BSD 64 Bit](https://github.com/stretchrcom/thru/blob/master/build/v1/thru-freebsd-amd64.zip?raw=true)
+  * [thru - v1 - BSD ARM](https://github.com/stretchrcom/thru/blob/master/build/v1/thru-freebsd-arm.zip?raw=true)
+  * [thru - v1 - Linux 32 Bit](https://github.com/stretchrcom/thru/blob/master/build/v1/thru-linux-386.zip?raw=true)
+  * [thru - v1 - Linux 64 Bit](https://github.com/stretchrcom/thru/blob/master/build/v1/thru-linux-amd64.zip?raw=true)
+  * [thru - v1 - Linux Arm](https://github.com/stretchrcom/thru/blob/master/build/v1/thru-linux-arm.zip?raw=true)
+  * [thru - v1 - Windows 32 Bit](https://github.com/stretchrcom/thru/blob/master/build/v1/thru-windows-386.zip?raw=true)
+  * [thru - v1 - Windows 64 Bit](https://github.com/stretchrcom/thru/blob/master/build/v1/thru-windows-amd64.zip?raw=true)
 
 Download the file somewhere nice (like `/usr/bin`), and ensure it is added to your `PATH` so you can use it in the command line.
 
