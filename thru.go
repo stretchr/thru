@@ -7,6 +7,7 @@ import (
 	"os"
 	"os/exec"
 	"os/signal"
+	"strconv"
 	"strings"
 	"time"
 )
@@ -43,12 +44,23 @@ func main() {
 
 	c := make(chan os.Signal, 1)
 	signal.Notify(c, os.Interrupt)
-	listener, listenErr := net.Listen("tcp", address)
 
-	if listenErr != nil {
-		fmt.Printf("FAILED: :-( Could not listen: %s\n", listenErr)
-		os.Exit(2)
-		return
+	var listener net.Listener
+	var listenErr error
+
+	for {
+		listener, listenErr = net.Listen("tcp", address)
+
+		if listenErr != nil {
+			parts := strings.Split(address, ":")
+			port, _ := strconv.ParseInt(parts[1], 10, 64)
+			port++
+			parts[1] = fmt.Sprintf("%d", port)
+			address = fmt.Sprintf("%s:%s", parts[0], parts[1])
+			s.Addr = address
+		} else {
+			break
+		}
 	}
 
 	go func() {
