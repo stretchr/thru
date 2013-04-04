@@ -18,6 +18,8 @@ Worlds simplest web server.
 ### Automagically open browser for me
 
     thru -o
+    
+You can also easily run multiple thru instances this way. thru will automatically select an open port and start serving the directory.
 
 ### Bind to a specific I.P. address
 
