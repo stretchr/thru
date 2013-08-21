@@ -33,7 +33,7 @@ You can also easily run multiple thru instances this way. thru will automaticall
 
 Download the latest version of thru by navigating the `build` directory.  Or see if the version you want is in this list:
 
-  * [thru - v1 - Mac OS X 32 Bit](https://github.com/stretchr/thru/blob/master/build/v1.0.1/thru-darwin-386.zip?raw=true)
+  * [thru - v1.0.1 - Mac OS X 32 Bit](https://github.com/stretchr/thru/blob/master/build/v1.0.1/thru-darwin-386.zip?raw=true)
   * [thru - v1.0.1 - Mac OS X 64 Bit](https://github.com/stretchr/thru/blob/master/build/v1.0.1/thru-darwin-amd64.zip?raw=true)
   * [thru - v1.0.1 - BSD 32 Bit](https://github.com/stretchr/thru/blob/master/build/v1.0.1/thru-freebsd-386.zip?raw=true)
   * [thru - v1.0.1 - BSD 64 Bit](https://github.com/stretchr/thru/blob/master/build/v1.0.1/thru-freebsd-amd64.zip?raw=true)
