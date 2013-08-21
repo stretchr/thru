@@ -33,6 +33,10 @@ func main() {
 	if strings.HasPrefix(address, ":") {
 		address = fmt.Sprintf("localhost%s", address)
 	}
+	// add a port if they specified just an address
+	if !strings.Contains(address, ":") {
+		address = fmt.Sprintf("%s:4000", address)
+	}
 
 	s := &http.Server{
 		Addr:           address,
