@@ -14,7 +14,7 @@ import (
 
 func main() {
 
-	fmt.Println("thru - The worlds simplest web server")
+	fmt.Printf("\n\nthru - The worlds simplest web server\n")
 	fmt.Println("by Mat Ryer and Tyler Bunnell")
 	fmt.Println("")
 
@@ -59,6 +59,10 @@ func main() {
 			parts := strings.Split(address, ":")
 			port, _ := strconv.ParseInt(parts[1], 10, 64)
 			port++
+			if port > 65535 {
+				fmt.Printf("Unable to bind to the given address on any port.\nMake sure you are binding an IP associated with one of your devices.\nError: %s\n\n", listenErr.Error())
+				os.Exit(1)
+			}
 			parts[1] = fmt.Sprintf("%d", port)
 			address = fmt.Sprintf("%s:%s", parts[0], parts[1])
 			s.Addr = address
@@ -82,7 +86,7 @@ func main() {
 	}()
 
 	fmt.Printf("These files are going thru %s\n", address)
-	fmt.Print("\nUse Ctrl+C to stop\n")
+	fmt.Printf("\nUse Ctrl+C to stop\n")
 
 	// should we open their browser for them the lazy bastards?
 	var openBrowser bool
@@ -99,7 +103,6 @@ func main() {
 
 	}
 
-	// begin the server
-	fmt.Printf("Fatal error: %s\n", s.Serve(listener))
+	s.Serve(listener)
 
 }
